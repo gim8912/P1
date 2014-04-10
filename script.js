@@ -14,6 +14,7 @@ $(document).ready(function(){
 				checkpoint++;
 			}
 			else{
+				alert("틀렸어용!!!!!!")
 				$('.c'+savepoint2[0]).toggleClass('k'+savepoint[0]);
 				$('.c'+savepoint2[1]).toggleClass('k'+savepoint[1]);
 			}		
