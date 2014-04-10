@@ -67,9 +67,6 @@ div{
 	background-image: url(img/c0.jpg);
 }
 
-.k0{
-	background-image: url(img/c0.jpg);
-}
 .k1{
 	background-image: url(img/c2.jpg); 
 }

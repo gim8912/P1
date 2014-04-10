@@ -14,8 +14,8 @@ $(document).ready(function(){
 				checkpoint++;
 			}
 			else{
-				$('.c'+savepoint2[0]).toggleClass('k'+savepoint[0]);
-				$('.c'+savepoint2[1]).toggleClass('k'+savepoint[1]);
+				$('.c'+savepoint2[0]).toggleClass('.k'+savepoint[0]);
+				$('.c'+savepoint2[1]).toggleClass('.k'+savepoint[1]);
 			}		
 		}
 	}
