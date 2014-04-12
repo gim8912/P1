@@ -53,7 +53,7 @@ $(document).ready(function(){
 	
 	
 	$('.c1').click(function(){
-		$(this).toggleClass('k'+card1[0]);
+		$('k'+card1[0]).fadeOut('fast');
 		savepoint[count] = card1[0];
 		savepoint2[count] = 1;
 		count +=1;
