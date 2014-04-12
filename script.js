@@ -35,8 +35,7 @@ $(document).ready(function(){
 		card2[i] = Random_Val;
 	}
 	//////////////
-	console.log(card1);
-	console.log(card2);
+
 
 	var Y = function(){
 
