@@ -35,15 +35,18 @@ $(document).ready(function(){
 	////////////// 
 
 	var Y = function(){
-		if(savepoint[0] == savepoint[1]){
-			checkpoint+=1;
-		}
-		else{
-			alert("X")
-			$('.c'+savepoint2[0]).toggleClass('k'+savepoint[0]);
-			$('.c'+savepoint2[1]).toggleClass('k'+savepoint[1]);
-			savepoint2[0]=0;
-			savepoint2[0]=0;
+		if(count==2)}
+			if(savepoint[0] == savepoint[1]){
+				checkpoint+=1;
+				count=0;
+			}
+			else{
+				alert("X")
+				$('.c'+savepoint2[0]).toggleClass('k'+savepoint[0]);
+				$('.c'+savepoint2[1]).toggleClass('k'+savepoint[1]);
+				count=0;
+	
+			}
 		}
 	}
 	$('.clear').click(function() {
