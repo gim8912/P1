@@ -59,106 +59,81 @@ $(document).ready(function(){
 		count +=1;
 		Y();
 	});
-
-
 	$('.c2').click(function(){
-		$(this).toggleClass('k3');
-		savepoint[count] = 3;
+		$(this).toggleClass('k'+card1[1]);
+		savepoint[count] = card1[1];
 		savepoint2[count] = 2;
 		count +=1;
 		Y();
 	});
-
-
 	$('.c3').click(function(){
-		$(this).toggleClass('k1');
-		savepoint[count] = 1;
+		$(this).toggleClass('k'+card1[2]);
+		savepoint[count] = card1[2];
 		savepoint2[count] = 3;
 		count +=1;
 		Y();
 	});
-
-
 	$('.c4').click(function(){
-		$(this).toggleClass('k4');
-		savepoint[count] = 4;
+		$(this).toggleClass('k'+card1[3]);
+		savepoint[count] = card1[3];
 		savepoint2[count] = 4;
 		count +=1;
 		Y();
 	});
-
-
 	$('.c5').click(function(){
-		$(this).toggleClass('k4');
-		savepoint[count] = 4;
+		$(this).toggleClass('k'+card1[4]);
+		savepoint[count] = card1[4];
 		savepoint2[count] = 5;
 		count +=1;
 		Y();
 	});
-
-
 	$('.c6').click(function(){
-		$(this).toggleClass('k6');
-		savepoint[count] = 6;
+		$(this).toggleClass('k'+card2[5]);
+		savepoint[count] = card1[5];
 		savepoint2[count] = 6;
 		count +=1;
 		Y();
 	});
-
-
 	$('.c7').click(function(){
-		$(this).toggleClass('k5');
-		savepoint[count] = 5;
+		$(this).toggleClass('k'+card2[0]);
+		savepoint[count] = card2[0];
 		savepoint2[count] = 7;
 		count +=1;
 		Y();
 	});
-
-
 	$('.c8').click(function(){
-		$(this).toggleClass('k2');
-		savepoint[count] = 2;
+		$(this).toggleClass('k'+card2[1]);
+		savepoint[count] = card2[1];
 		savepoint2[count] = 8;
 		count +=1;
 		Y();
 	});
-
-
 	$('.c9').click(function(){
-		$(this).toggleClass('k2');
-		savepoint[count] = 2;
+		$(this).toggleClass('k'+card2[2]);
+		savepoint[count] = card2[2];
 		savepoint2[count] = 9;
 		count +=1;
 		Y();
 	});
-
-
 	$('.c10').click(function(){
-		$(this).toggleClass('k3');
-		savepoint[count] = 3;
+		$(this).toggleClass('k'+card2[3]);
+		savepoint[count] = card2[3];
 		savepoint2[count] = 10;
 		count +=1;
 		Y();
 	});
-
-
 	$('.c11').click(function(){
-		$(this).toggleClass('k6');
-		savepoint[count] = 6;
+		$(this).toggleClass('k'+card2[4]);
+		savepoint[count] = card2[4];
 		savepoint2[count] = 11;
 		count +=1;
 		Y();
 	});
-
-
 	$('.c12').click(function(){
-		$(this).toggleClass('k5');
-		savepoint[count] = 5;
+		$(this).toggleClass('k'+card2[5]);
+		savepoint[count] = card2[5];
 		savepoint2[count] = 12;
 		count +=1;
 		Y();
 	});
-
-
 });
-
