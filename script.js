@@ -1,10 +1,11 @@
+var checkpoint = 1;
 $(document).ready(function(){ 
 	var count = 0;
 	var check = 0;
 	var savepoint = [0, 0];
 	var savepoint2 = [0, 0];
 	var lock = [0,0,0,0,0,0,0,0,0,0,0,0];
-	var checkpoint = 0;
+
 	
 
 	var card1 = [0,0,0,0,0,0];
