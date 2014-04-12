@@ -50,8 +50,7 @@ $(document).ready(function(){
 			}		
 		}
 	}
-	R(card1);
-	R(card2);
+
 	$('.clear').click(function() {
 		location.reload();
 	});
