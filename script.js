@@ -50,9 +50,11 @@ $(document).ready(function(){
 	$('.clear').click(function() {
 		location.reload();
 	});
-		$('.c1').click(function(){
-		$(this).toggleClass('k1');
-		savepoint[count] = 1;
+	
+	
+	$('.c1').click(function(){
+		$(this).toggleClass('k'+card1[0]);
+		savepoint[count] = card1[0];
 		savepoint2[count] = 1;
 		count +=1;
 		Y();
