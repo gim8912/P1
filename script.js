@@ -9,14 +9,17 @@ $(document).ready(function(){
 	var Random_Val = 0;
 	var card1 = [0,0,0,0,0,0];
 	var card2 = [0,0,0,0,0,0];
+	
+	var i=0;
+	var j=0;
 
 
 
 
 	////////////// 
-	for(var i=0;i<6;i++){
+	for(i=0;i<6;i++){
 		Random_Val = Math.Random()*(6)+1;
-		for(var j=0;j<i;j++){
+		for(j=0;j<i;j++){
 			if(card[j]==Random_Val){
 				Random_Val = Math.Random()*(6)+1;
 				j=0;
