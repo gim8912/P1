@@ -11,26 +11,7 @@ $(document).ready(function(){
 
 	
 	////////////// 
-	for(var i=0;i<6;i++){
-		Random_Val = Math.Random()*(6)+1;
-		for(var j=0;j<i;j++){
-			if(card[j]==Random_Val){
-				Random_Val = Math.Random()*(6)+1;
-				j=0;
-			}
-		}
-		card1[i] = Random_Val;
-	}
-	for(var i=0;i<6;i++){
-		Random_Val = Math.Random()*(6)+1;
-		for(var j=0;j<i;j++){
-			if(card[j]==Random_Val){
-				Random_Val = Math.Random()*(6)+1;
-				j=0;
-			}
-		}
-		card2[i] = Random_Val;
-	}
+
 	//////////////
 	
 	var Y = function(){
