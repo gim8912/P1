@@ -53,7 +53,7 @@ $(document).ready(function(){
 	
 	
 	$('.c1').click(function(){
-		$(this).toggleClass('k'+card1[0]);
+		$(this).addClass('k'+card1[0]);
 		savepoint[count] = card1[0];
 		savepoint2[count] = 1;
 		count +=1;
@@ -88,7 +88,7 @@ $(document).ready(function(){
 		Y();
 	});
 	$('.c6').click(function(){
-		$(this).toggleClass('k'+card2[5]);
+		$(this).toggleClass('k'+card1[5]);
 		savepoint[count] = card1[5];
 		savepoint2[count] = 6;
 		count +=1;
