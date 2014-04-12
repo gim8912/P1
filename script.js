@@ -3,8 +3,38 @@ var check = 0;
 var savepoint = [0, 0];
 var savepoint2 = [0, 0];
 var checkpoint = 0;
- 
+var Random_Val = 0;
+var card1 = [0,0,0,0,0,0];
+var card2 = [0,0,0,0,0,0];
+////////////// 
+for(var i=0 ; i<6 ; i++){
+	Random_Val = (Math.Random()*(7)+1);
+	for(var j=0;j<i;j++){
+		if(card[j]==Random_Val){
+			Random_Val = (Math.Random()*(7)+1);
+			j=0;
+		}
+	}
+	card1[i] = Random_Val;
+}
+for(var i=0;i<6;i++){
+	Random_Val = (Math.Random()*(7)+1);
+	for(var j=0;j<i;j++){
+		if(card[j]==Random_Val){
+			Random_Val = (Math.Random()*(7)+1);
+			j=0;
+		}
+	}
+	card2[i] = Random_Val;
+}
+//////////////
+
+
+
 $(document).ready(function(){ 
+
+	
+	
 	var Y = function(){
 
 		if(count == 2){
@@ -14,12 +44,14 @@ $(document).ready(function(){
 				checkpoint+=1;
 			}
 			else{
-				alert("틀렸어용!!!!!!")
+				alert("X")
 				$('.c'+savepoint2[0]).toggleClass('k'+savepoint[0]);
 				$('.c'+savepoint2[1]).toggleClass('k'+savepoint[1]);
 			}		
 		}
 	}
+	R(card1);
+	R(card2);
 	$('.clear').click(function() {
 		location.reload();
 	});
