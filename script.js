@@ -1,10 +1,11 @@
-var checkpoint = 0;
+
 $(document).ready(function(){ 
 	var count = 0;
 	var check = 0;
 	var savepoint = [0, 0];
 	var savepoint2 = [0, 0];
 	var lock = [0,0,0,0,0,0,0,0,0,0,0,0];
+	var checkpoint = 0;
 	
 
 	var card1 = [0,0,0,0,0,0];
@@ -13,7 +14,7 @@ $(document).ready(function(){
 	var j=0;
 	var Random_Val =0;
 	////////////// 
-	$('.score').append("<p>"+checkpoint+"</p>");
+	$('.score').append(checkpoint);
 	for(i=0;i<6;i++){
 		Random_Val = Math.floor((Math.random()*6)+1);
 		for(j=0;j<i;j++){
@@ -42,7 +43,7 @@ $(document).ready(function(){
 			if(savepoint[0] == savepoint[1]){
 				lock[savepoint[0]-1] = 1;
 				lock[savepoint[1]-1] = 1;
-				checkpoint+=1;
+				checkpoint++;
 				count=0;
 			}
 			else{
