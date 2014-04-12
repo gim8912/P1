@@ -45,7 +45,7 @@ $(document).ready(function(){
 				lock[savepoint[1]-1] = 1;
 				checkpoint++;
 				count=0;
-				$('.score').after(checkpoint);
+				
 			}
 			else{
 				alert("X")
