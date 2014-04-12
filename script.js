@@ -20,6 +20,11 @@ $(document).ready(function(){
 			}		
 		}
 	}
+	$("clear").click(function() {
+		location.reload();
+	});
+
+
 
 	$('.c1').click(function(){
 		$(this).toggleClass('k1');
