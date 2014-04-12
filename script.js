@@ -129,7 +129,7 @@ $(document).ready(function(){
 
 	$('.c10').click(function(){
 		$(this).toggleClass('k'+card2[3]);
-		savepoint[count] = card2[3]
+		savepoint[count] = card2[3];
 		savepoint2[count] = 10;
 		count +=1;
 		Y();
