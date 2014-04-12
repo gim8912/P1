@@ -32,7 +32,7 @@ $(document).ready(function(){
 		}
 		card2[i] = Random_Val;
 	}
-	//////////////
+	////////////// 
 
 	var Y = function(){
 		if(count == 2){
