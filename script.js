@@ -13,7 +13,7 @@ $(document).ready(function(){
 	var j=0;
 	var Random_Val =0;
 	////////////// 
-	$('.score').console.log(checkpoint);
+	$('.score').append("<p>"+checkpoint+"</p>");
 	for(i=0;i<6;i++){
 		Random_Val = Math.floor((Math.random()*6)+1);
 		for(j=0;j<i;j++){
