@@ -7,10 +7,12 @@ $(document).ready(function(){
 	var Random_Val = 0;
 	var card1 = [0,0,0,0,0,0];
 	var card2 = [0,0,0,0,0,0];
+	var i=0;
+	var j=0;
 	////////////// 
-	for(var i=0;i<6;i++){
+	for(i=0;i<6;i++){
 		Random_Val = Math.floor((Math.random()*6)+1);
-		for(var j=0;j<i;j++){
+		for(j=0;j<i;j++){
 			if(card[j]==Random_Val){
 				Random_Val = Math.floor((Math.random()*6)+1);
 				j=0;
@@ -30,8 +32,7 @@ $(document).ready(function(){
 		card2[i] = Random_Val;
 	}
 	//////////////
-	console.log(card1);
-	console.log(card2);
+
 	var Y = function(){
 		if(count == 2){
 			count=0;
