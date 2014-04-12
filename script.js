@@ -1,39 +1,17 @@
-var count = 0;
-var check = 0;
-var savepoint = [0, 0];
-var savepoint2 = [0, 0];
-var checkpoint = 0;
-var Random_Val = 0;
-var card1 = [0,0,0,0,0,0];
-var card2 = [0,0,0,0,0,0];
-
-
-
-
 $(document).ready(function(){ 
+
+	var count = 0;
+	var check = 0;
+	var savepoint = [0, 0];
+	var savepoint2 = [0, 0];
+	var checkpoint = 0;
+	var Random_Val = 0;
+	var card1 = [0,0,0,0,0,0];
+	var card2 = [0,0,0,0,0,0];
 
 	
 	////////////// 
-	for(var i=0 ; i<6 ; i++){
-		Random_Val = (Math.Random()*(7)+1);
-		for(var j=0;j<i;j++){
-			if(card[j]==Random_Val){
-				Random_Val = (Math.Random()*(7)+1);
-				j=0;
-			}
-		}
-		card1[i] = Random_Val;
-	}
-	for(var i=0;i<6;i++){
-		Random_Val = (Math.Random()*(7)+1);
-		for(var j=0;j<i;j++){
-			if(card[j]==Random_Val){
-				Random_Val = (Math.Random()*(7)+1);
-				j=0;
-			}
-		}
-		card2[i] = Random_Val;
-	}
+
 	//////////////
 	
 	var Y = function(){
