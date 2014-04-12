@@ -44,6 +44,7 @@ $(document).ready(function(){
 				lock[savepoint[0]-1] = 1;
 				lock[savepoint[1]-1] = 1;
 				checkpoint++;
+				alert(checkpoint);
 				count=0;
 				
 			}
