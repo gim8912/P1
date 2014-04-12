@@ -35,7 +35,7 @@ $(document).ready(function(){
 	////////////// 
 
 	var Y = function(){
-		if(count==2)}
+		if(count==2){
 			if(savepoint[0] == savepoint[1]){
 				checkpoint+=1;
 				count=0;
