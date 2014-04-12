@@ -11,7 +11,7 @@ $(document).ready(function(){
 			count=0;
 			
 			if(savepoint[0] == savepoint[1]){
-				checkpoint++;
+				checkpoint+=1;
 			}
 			else{
 				alert("틀렸어용!!!!!!")
@@ -20,7 +20,7 @@ $(document).ready(function(){
 			}		
 		}
 	}
-	$("clear").click(function() {
+	$('.clear').click(function() {
 		location.reload();
 	});
 
