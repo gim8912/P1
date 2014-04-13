@@ -5,6 +5,7 @@ $(document).ready(function(){
 	var savepoint = [0, 0]; ////// 뒤집은 첫번째 카드와 두번쨰 카드 값 저장 변수
 	var savepoint2 = [0, 0];////// 뒤집은 첫번째 카드와 두번쨰 카드 위치 저장 변수
 	var lock = [0,0,0,0,0,0,0,0,0,0,0,0];  // 맞춘 카드들을 못뒤집게 하는 변수
+	var checkpoint2 = 0;
 
 	
 
@@ -26,18 +27,20 @@ $(document).ready(function(){
 
 
 		for(j=0;j<i;j++){  // 중복값을 검사하는 반복문 부분.
+			if(checkpoint2==1){
+				j=0;
+			}
 			if(card1[j]==Random_Val){ // 지금까지 입력한 값들의 중복을 찾아낸다
-				while(1){
-					Random_Val = Math.floor((Math.random()*6)+1); // 조건문이 참이면 새로운 난수 생성.  
-					if(card1[j]!=Random_Val){
-						break;
-					}
-				}
+				Random_Val = Math.floor((Math.random()*6)+1); // 조건문이 참이면 새로운 난수 생성.
 				j=0; // 그리고 다시 처음부터 중복검사를 해야하므로 j=0으로 만들어준다. 
+				if(card1[j]==Random_Val){
+					checkpoint2=1;
+				}
 			}
 		}
 		card1[i] = Random_Val; // 위의 반복문을 빠져나오면 중복값이 없다는 말이므로 
 		                 // 카드배열의 i번째에 저장된 값을 넣어준다.
+		checkpoint2=0;
 	}
 
 
@@ -46,16 +49,19 @@ $(document).ready(function(){
 
 
 		for(j=0;j<i;j++){
-			if(card2[j]==Random_Val){
-				while(1){
-					Random_Val = Math.floor((Math.random()*6)+1); // 조건문이 참이면 새로운 난수 생성.  
-					if(card2[j]!=Random_Val){
-						break;
-					}
-				}
+			if(checkpoint2==1){
+				j=0;
 			}
+			if(card2[j]==Random_Val){
+				Random_Val = Math.floor((Math.random()*6)+1);
+				j=0;
+				if(card2[j]==Random_Val){
+					checkpoint2=1;
+			}
+			
 		}
 		card2[i] = Random_Val; 
+		checkpoint2 = 0;
 	}
 	////////////// //////////////////////////
 
