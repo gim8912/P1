@@ -49,13 +49,22 @@ $(document).ready(function(){
 	
 
 	var Y = function(){ ///// 뒤집은 카드들이 같은지 같지않은지 검사해주는 함수.
-		if(count==2){
-			if(savepoint[0] == savepoint[1]){
-				lock[savepoint[0]-1] = 1;
-				lock[savepoint[1]-1] = 1;
-				checkpoint++;
-				alert(checkpoint);
-				count=0;
+		if(count==2){ // 카드들을 뒤집을때마다 count가 +1씩 된다. 
+		              // 카드를 2번 뒤집어야 하므로, 최대 2회만 뒤집을수 있게 조건을 걸어준다.
+            
+ 			if(savepoint[0] == savepoint[1]){ // count = 1 첫번째 카드를 뒤집은 상태. 
+			                                  //  savepoint[count] = 클릭이벤트 발생한 카드 위치값.
+			                                  // count = 2 두번째 카드를 뒤집은 상태. 
+			                                  //  savepoint[count] = 클릭이벤트 발생한 카드 위치값.
+			                                  // 카드를 2번 뒤집게 되면 각각의 카드 주소들이 저장됨.
+			                                  // 그래서 이 두 값들이 같으면 다음 조건문을 수행.
+			                                  
+				lock[savepoint[0]-1] = 1; // 맞춘 카드들을 클릭할때마다 count가 +1씩 되어 
+				lock[savepoint[1]-1] = 1; // 게임을 방해, 위치를 저장한 배열을 활용하여 
+				checkpoint++;             // 맞춘그림들이 count +1이 안되도록 조건을 걸어줌
+				alert(checkpoint);      
+				count=0;                  // 두번 뒤집으면 다시 카운트를 0으로 만들어
+				                          // 다시 다른카드들을 뒤집을수 있게 해준다.
 				
 			}
 			else{
