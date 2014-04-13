@@ -65,9 +65,9 @@ $(document).ready(function(){
 					checkpoint2=0;
 				}
 			}
+		}
 		card2[i] = Random_Val; 
 		checkpoint2 = 0;
-		}
 	}
 	////////////// //////////////////////////
 
