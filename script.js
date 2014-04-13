@@ -70,7 +70,8 @@ $(document).ready(function(){
 				
 			}
 			else{
-				alert(card1,card2);
+				alert(card1);
+				alert(card2);
 				$('.c'+savepoint2[0]).toggleClass('k'+savepoint[0]);
 				$('.c'+savepoint2[1]).toggleClass('k'+savepoint[1]);
 				count=0;
