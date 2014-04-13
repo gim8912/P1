@@ -70,8 +70,8 @@ $(document).ready(function(){
 				
 			}
 			else{
-				alert(card1);
-				alert(card2);
+				alert("X");
+				//alert(card2);
 				$('.c'+savepoint2[0]).toggleClass('k'+savepoint[0]);
 				$('.c'+savepoint2[1]).toggleClass('k'+savepoint[1]);
 				lock[savepoint2[0]-1] = 0; // 카드 잠금 해제
