@@ -2,8 +2,8 @@ var checkpoint = 1;
 $(document).ready(function(){ 
 	var count = 0; // 현재 카드를 몇번  뒤집었는가의 카운트 변수.(최대 2회 까지만 뒤집을수 있게 나중에 조건문을 건다)
 	var check = 0;
-	var savepoint = [0, 0]; //////
-	var savepoint2 = [0, 0];////// 첫번째 카드와 두번쨰 카드 위치 저장 변수
+	var savepoint = [0, 0]; ////// 뒤집은 첫번째 카드와 두번쨰 카드 값 저장 변수
+	var savepoint2 = [0, 0];////// 뒤집은 첫번째 카드와 두번쨰 카드 위치 저장 변수
 	var lock = [0,0,0,0,0,0,0,0,0,0,0,0];  // 맞춘 카드들을 못뒤집게 하는 변수
 
 	
