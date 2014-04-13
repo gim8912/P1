@@ -23,41 +23,33 @@ $(document).ready(function(){
 	for(i=0;i<6;i++){
 		Random_Val = Math.floor((Math.random()*6)+1);//Math.floor((Math.random()*최대값)+최소값);
 		                                    // 1~6사이의 난수들중 하나의 값이 Random_Val에 저장이 된다.
-		
-		while(1){  // 중복값을 검사하는 반복문 부분.
-			if(j==i){
-				break;
-			}
-			else if(card1[j]==Random_Val){ // 지금까지 입력한 값들의 중복을 찾아낸다
+
+
+		for(j=0;j<i;j++){  // 중복값을 검사하는 반복문 부분.
+			if(card1[j]==Random_Val){ // 지금까지 입력한 값들의 중복을 찾아낸다
 				Random_Val = Math.floor((Math.random()*6)+1); // 조건문이 참이면 새로운 난수 생성.  
 				j=0; // 그리고 다시 처음부터 중복검사를 해야하므로 j=0으로 만들어준다. 
 			}
-			else{
-				j++;
-			}
-			
 		}
 		card1[i] = Random_Val; // 위의 반복문을 빠져나오면 중복값이 없다는 말이므로 
 		                 // 카드배열의 i번째에 저장된 값을 넣어준다.
 	}
-	j=0;
-	for(i=0;i<6;i++){
+
+
+	for(i=0;i<6;i++){ // 이하 동문, 2번째 카드배열의 난수 생성 반복문
 		Random_Val = Math.floor((Math.random()*6)+1);
-		while(1){  // 중복값을 검사하는 반복문 부분.
-			if(j==i){
-				break;
+
+
+		for(j=0;j<i;j++){
+			if(card2[j]==Random_Val){
+				Random_Val = Math.floor((Math.random()*6)+1);
+				j=0;
 			}
-			else if(card1[j]==Random_Val){ 
-				Random_Val = Math.floor((Math.random()*6)+1);  
-				j=0; 
-			}
-			else{
-				j++;
-			}
-			
 		}
 		card2[i] = Random_Val; 
 	}
+	////////////// //////////////////////////
+
 	
 	
 
