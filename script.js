@@ -36,6 +36,9 @@ $(document).ready(function(){
 				if(card1[j]==Random_Val){
 					checkpoint2=1;
 				}
+				else{
+					checkpoint2=0;
+				}
 			}
 		}
 		card1[i] = Random_Val; // 위의 반복문을 빠져나오면 중복값이 없다는 말이므로 
@@ -57,6 +60,9 @@ $(document).ready(function(){
 				j=0;
 				if(card2[j]==Random_Val){
 					checkpoint2=1;
+				}
+				else{
+					checkpoint2=0;
 				}
 			}
 		card2[i] = Random_Val; 
