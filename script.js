@@ -24,7 +24,7 @@ $(document).ready(function(){
 		Random_Val = Math.floor((Math.random()*6)+1);//Math.floor((Math.random()*최대값)+최소값);
 		                                    // 1~6사이의 난수들중 하나의 값이 Random_Val에 저장이 된다.
 		
-		While(j!=i-1){  // 중복값을 검사하는 반복문 부분.
+		while(j!=i-1){  // 중복값을 검사하는 반복문 부분.
 			
 			if(card1[j]==Random_Val){ // 지금까지 입력한 값들의 중복을 찾아낸다
 				Random_Val = Math.floor((Math.random()*6)+1); // 조건문이 참이면 새로운 난수 생성.  
@@ -41,7 +41,7 @@ $(document).ready(function(){
 	j=0;
 	for(i=0;i<6;i++){
 		Random_Val = Math.floor((Math.random()*6)+1);
-		While(j!=i-1){  // 중복값을 검사하는 반복문 부분.
+		while(j!=i-1){  // 중복값을 검사하는 반복문 부분.
 			if(card1[j]==Random_Val){ 
 				Random_Val = Math.floor((Math.random()*6)+1);  
 				j=0; 
