@@ -62,13 +62,14 @@ $(document).ready(function(){
 				lock[savepoint2[0]-1] = 1; // 맞춘 카드들을 클릭할때마다 count가 +1씩 되어 
 				lock[savepoint2[1]-1] = 1; // 게임을 방해, 위치를 저장한 배열을 활용하여 
 				checkpoint++;             // 맞춘그림들이 count +1이 안되도록 조건을 걸어줌
-				alert(checkpoint);      
+				alert(card2);      
 				count=0;                  // 두번 뒤집으면 다시 카운트를 0으로 만들어
 				                          // 다시 다른카드들을 뒤집을수 있게 해준다.
+				                       
 				
 			}
 			else{
-				alert("X")
+				alert(card1);
 				$('.c'+savepoint2[0]).toggleClass('k'+savepoint[0]);
 				$('.c'+savepoint2[1]).toggleClass('k'+savepoint[1]);
 				count=0;
