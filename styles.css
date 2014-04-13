@@ -1,6 +1,9 @@
 body {
   background-color:#d0e4fe;
 }
+table{
+	margin : center;
+}
 div{        
 	overflow:hidden;
 	position: relative;
