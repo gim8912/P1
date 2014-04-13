@@ -57,11 +57,11 @@ $(document).ready(function(){
 				j=0;
 				if(card2[j]==Random_Val){
 					checkpoint2=1;
+				}
 			}
-			
-		}
 		card2[i] = Random_Val; 
 		checkpoint2 = 0;
+		}
 	}
 	////////////// //////////////////////////
 
