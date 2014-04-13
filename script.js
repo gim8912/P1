@@ -25,7 +25,7 @@ $(document).ready(function(){
 		                                    // 1~6사이의 난수들중 하나의 값이 Random_Val에 저장이 된다.
 		
 		while(1){  // 중복값을 검사하는 반복문 부분.
-			if(j==5){
+			if(j==i){
 				break;
 			}
 			else if(card1[j]==Random_Val){ // 지금까지 입력한 값들의 중복을 찾아낸다
@@ -43,8 +43,8 @@ $(document).ready(function(){
 	j=0;
 	for(i=0;i<6;i++){
 		Random_Val = Math.floor((Math.random()*6)+1);
-		while(j!=i-1){  // 중복값을 검사하는 반복문 부분.
-			if(j==5){
+		while(1){  // 중복값을 검사하는 반복문 부분.
+			if(j==i){
 				break;
 			}
 			else if(card1[j]==Random_Val){ 
