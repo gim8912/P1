@@ -33,17 +33,17 @@ $(document).ready(function(){
 		card1[i] = Random_Val; // 위의 반복문을 빠져나오면 중복값이 없다는 말이므로 
 		                 // 카드배열의 i번째에 저장된 값을 넣어준다.
 	}
-	i=0;j=0;Random_Val=0;
+	
 	for(i=0;i<6;i++){ // 이하 동문, 2번째 카드배열의 난수 생성 반복문
 		Random_Val = Math.floor((Math.random()*6)+1);
 
 		for(j=0;j<i;j++){
 			if(card2[j]==Random_Val){
-				Random_Val =Math.floor((Math.random()*6)+1);
+				Random_Val = Math.floor((Math.random()*6)+1);
 				j=0;
 			}
 		}
-		card2[i] = Random_Val; //
+		card2[i] = Random_Val; 
 	}
 	////////////// //////////////////////////
 	
