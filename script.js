@@ -74,27 +74,36 @@ $(document).ready(function(){
 				alert(card2);
 				$('.c'+savepoint2[0]).toggleClass('k'+savepoint[0]);
 				$('.c'+savepoint2[1]).toggleClass('k'+savepoint[1]);
+				lock[savepoint2[0]-1] = 0; // 카드 잠금 해제
+				lock[savepoint2[1]-1] = 0;
 				count=0;
 	
 			}
 		}
 	}
+	
+	
+	
 	$('.clear').click(function() {
 		location.reload();
 	});
 	
 	
+	
+	///////////////////// 카드부분 
 	$('.c1').click(function(){
-		if(lock[0]==0){
-			$(this).addClass('k'+card1[0]);
-			savepoint[count] = card1[0];
-			savepoint2[count] = 1;
+		if(lock[0]==0){ // 카드가 뒤집혀져있는지 아닌지 검사.
+			lock[0]=1
+			$(this).addClass('k'+card1[0]); 
+			savepoint[count] = card1[0]; // 뒤집은 카드 값 저장
+			savepoint2[count] = 1;       // 뒤집은 카드 위치 저장
 			count +=1;
-			Y();
+			Y();                         // 정답검사 함수실행
 		}
 	});
 	$('.c2').click(function(){
 		if(lock[1]==0){
+			lock[1]=1
 			$(this).addClass('k'+card1[1]);
 			savepoint[count] = card1[1];
 			savepoint2[count] = 2;
@@ -104,6 +113,7 @@ $(document).ready(function(){
 	});
 	$('.c3').click(function(){
 		if(lock[2]==0){
+			lock[2]=1
 			$(this).addClass('k'+card1[2]);
 			savepoint[count] = card1[2];
 			savepoint2[count] = 3;
@@ -113,6 +123,7 @@ $(document).ready(function(){
 	});
 	$('.c4').click(function(){
 		if(lock[3]==0){
+			lock[3]=1
 			$(this).addClass('k'+card1[3]);
 			savepoint[count] = card1[3];
 			savepoint2[count] = 4;
@@ -122,6 +133,7 @@ $(document).ready(function(){
 	});
 	$('.c5').click(function(){
 		if(lock[4]==0){
+			lock[4]=1
 			$(this).addClass('k'+card1[4]);
 			savepoint[count] = card1[4];
 			savepoint2[count] = 5;
@@ -131,6 +143,7 @@ $(document).ready(function(){
 	});
 	$('.c6').click(function(){
 		if(lock[5]==0){
+			lock[5]=1
 			$(this).addClass('k'+card1[5]);
 			savepoint[count] = card1[5];
 			savepoint2[count] = 6;
@@ -140,6 +153,7 @@ $(document).ready(function(){
 	});
 	$('.c7').click(function(){
 		if(lock[6]==0){
+			lock[6]=1
 			$(this).addClass('k'+card2[0]);
 			savepoint[count] = card2[0];
 			savepoint2[count] = 7;
@@ -149,6 +163,7 @@ $(document).ready(function(){
 	});
 	$('.c8').click(function(){
 		if(lock[7]==0){
+			lock[7]=1
 			$(this).addClass('k'+card2[1]);
 			savepoint[count] = card2[1];
 			savepoint2[count] = 8;
@@ -158,6 +173,7 @@ $(document).ready(function(){
 	});
 	$('.c9').click(function(){
 		if(lock[8]==0){
+			lock[8]=1
 			$(this).addClass('k'+card2[2]);
 			savepoint[count] = card2[2];
 			savepoint2[count] = 9;
@@ -167,6 +183,7 @@ $(document).ready(function(){
 	});
 	$('.c10').click(function(){
 		if(lock[9]==0){
+			lock[9]=1
 			$(this).addClass('k'+card2[3]);
 			savepoint[count] = card2[3];
 			savepoint2[count] = 10;
@@ -176,6 +193,7 @@ $(document).ready(function(){
 	});
 	$('.c11').click(function(){
 		if(lock[10]==0){
+			lock[10]=1
 			$(this).addClass('k'+card2[4]);
 			savepoint[count] = card2[4];
 			savepoint2[count] = 11;
@@ -185,6 +203,7 @@ $(document).ready(function(){
 	});
 	$('.c12').click(function(){
 		if(lock[11]==0){
+			lock[11]=1
 			$(this).addClass('k'+card2[5]);
 			savepoint[count] = card2[5];
 			savepoint2[count] = 12;
