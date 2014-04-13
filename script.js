@@ -59,8 +59,8 @@ $(document).ready(function(){
 			                                  // 카드를 2번 뒤집게 되면 각각의 카드 주소들이 저장됨.
 			                                  // 그래서 이 두 값들이 같으면 다음 조건문을 수행.
 			                                  
-				lock[savepoint2[0]] = 1; // 맞춘 카드들을 클릭할때마다 count가 +1씩 되어 
-				lock[savepoint2[1]] = 1; // 게임을 방해, 위치를 저장한 배열을 활용하여 
+				lock[savepoint2[0]-1] = 1; // 맞춘 카드들을 클릭할때마다 count가 +1씩 되어 
+				lock[savepoint2[1]-1] = 1; // 게임을 방해, 위치를 저장한 배열을 활용하여 
 				checkpoint++;             // 맞춘그림들이 count +1이 안되도록 조건을 걸어줌
 				alert(checkpoint);      
 				count=0;                  // 두번 뒤집으면 다시 카운트를 0으로 만들어
