@@ -1,4 +1,5 @@
 var checkpoint = 0;
+
 $(document).ready(function(){ 
 	var count = 0; // 현재 카드를 몇번  뒤집었는가의 카운트 변수.(최대 2회 까지만 뒤집을수 있게 나중에 조건문을 건다)
 	var check = 0;
@@ -8,6 +9,7 @@ $(document).ready(function(){
 	var checkpoint2 = 0;
 	var minute = 0;
 	var second = 0;
+	
 
 	
 
@@ -81,9 +83,11 @@ $(document).ready(function(){
 		$("#second").html(second);      
 		$("#minute").html(minute); 
 	}
-	setInterval()("Time()", 1000);
+	/* 타이머를 시작하는 함수 */
+	function start_timer() { 
+		setInterval("Time()", 1000);
+	}
 	
-
 	var Y = function(){ ///// 뒤집은 카드들이 같은지 같지않은지 검사해주는 함수.
 		if(count==2){ // 카드들을 뒤집을때마다 count가 +1씩 된다. 
 		              // 카드를 2번 뒤집어야 하므로, 최대 2회만 뒤집을수 있게 조건을 걸어준다.
