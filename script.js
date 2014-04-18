@@ -81,7 +81,13 @@ $(document).ready(function(){
 		$("#second").html(second);      
 		$("#minute").html(minute);      
 	}
+	
 	setTimeout("Time()", 1000);
+	
+	window.onload = function() {
+		Time();
+	}
+
 	
 	
 
