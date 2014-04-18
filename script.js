@@ -74,7 +74,7 @@ $(document).ready(function(){
 		checkpoint2 = 0;
 	}
 	///////////// //////////////////////////
-	var Time = function(){
+	function Time(){
 		second++;
 		if(second == 60){
 			mintute++;
@@ -84,9 +84,9 @@ $(document).ready(function(){
 		$("#minute").html(minute); 
 	}
 	/* 타이머를 시작하는 함수 */
-	function start_timer() { 
-		setInterval("Time()", 1000);
-	}
+	
+	setInterval("Time()", 1000);
+
 	
 	var Y = function(){ ///// 뒤집은 카드들이 같은지 같지않은지 검사해주는 함수.
 		if(count==2){ // 카드들을 뒤집을때마다 count가 +1씩 된다. 
