@@ -81,7 +81,7 @@ $(document).ready(function(){
 		$("#second").html(second);      
 		$("#minute").html(minute); 
 	}
-	setInterval("Time()", 1000);
+	window.setInterval()("Time()", 1000);
 	
 
 	var Y = function(){ ///// 뒤집은 카드들이 같은지 같지않은지 검사해주는 함수.
