@@ -6,6 +6,8 @@ $(document).ready(function(){
 	var savepoint2 = [0, 0];////// 뒤집은 첫번째 카드와 두번쨰 카드 위치 저장 변수
 	var lock = [0,0,0,0,0,0,0,0,0,0,0,0];  // 맞춘 카드들을 못뒤집게 하는 변수
 	var checkpoint2 = 0;
+	var minute = 0;
+	var second = 0;
 
 	
 
@@ -69,8 +71,17 @@ $(document).ready(function(){
 		card2[i] = Random_Val; 
 		checkpoint2 = 0;
 	}
-	////////////// //////////////////////////
-
+	///////////// //////////////////////////
+	var Time = function(){
+		second++;
+		if(second == 60){
+			mintute++;
+			second=0;
+		}
+		$("#second").html(second);      
+		$("#minute").html(minute);      
+	}
+	setTimeout("Time()", 1000);
 	
 	
 
