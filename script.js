@@ -79,10 +79,12 @@ $(document).ready(function(){
 			second=0;
 		}
 		$("#second").html(second);      
-		$("#minute").html(minute);      
+		$("#minute").html(minute); 
+		
+		setTimeout("Time()", 1000);
 	}
 	
-	setTimeout("Time()", 1000);
+	
 	
 	window.onload = function() {
 		Time();
