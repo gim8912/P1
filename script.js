@@ -85,7 +85,7 @@ $(document).ready(function(){
 	}
 	/* 타이머를 시작하는 함수 */
 	
-	setInterval("Time()", 1000);
+	setInterval("Time", 1000);
 
 	
 	var Y = function(){ ///// 뒤집은 카드들이 같은지 같지않은지 검사해주는 함수.
